@@ -21,7 +21,7 @@
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
   <div class="min-h-screen bg-[#020617] text-slate-100 bg-grad-page-background" bis_skin_checked="1">
-    <header class="relative bg-background py-3 sm:py-4 border-b border-foreground/10 sticky top-0 z-50 shadow-sm" id="header">
+    <header class="bg-background py-3 sm:py-4 border-b border-foreground/10 sticky top-0 z-50 shadow-sm" id="header">
       <!-- Bottom accent line (hidden on home) -->
       <?php if ( ! is_front_page() ) : ?>
       <div class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#FF6A00]/60 to-transparent"></div>
@@ -77,6 +77,10 @@
             <a class="font-body font-semibold text-foreground text-[11px] tracking-widest uppercase hover:text-primary transition-colors"
               href="/stuck-vs-ai">
               AI
+            </a>
+            <a class="font-body font-semibold text-foreground text-[11px] tracking-widest uppercase hover:text-primary transition-colors"
+              href="/packages">
+              PACKAGES
             </a>
             <a class="font-body font-semibold text-foreground text-[11px] tracking-widest uppercase hover:text-primary transition-colors"
               href="/case-study">

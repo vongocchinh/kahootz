@@ -97,7 +97,7 @@ foreach ( $icon_map as $kw => $ic ) {
                 <div class="flex flex-wrap items-center gap-4">
                     <a href="<?php echo esc_url( home_url('/contact') ); ?>"
                        class="inline-flex items-center gap-3 bg-[#FF6A00] hover:bg-[#FF5500] text-white font-body font-bold text-[12px] uppercase tracking-[0.2em] px-8 py-4 rounded-full transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,106,0,0.35)] hover:-translate-y-0.5">
-                        <i class="ph-fill ph-chat-circle text-lg"></i> Message Us Now
+                        <i class="ph-fill ph-chat-circle text-lg"></i> MESSAGE US NOW
                     </a>
                     <a href="<?php echo esc_url( home_url('/packages') ); ?>"
                        class="inline-flex items-center gap-3 border border-white/15 hover:border-[#FF6A00]/40 text-white/70 hover:text-[#FF6A00] font-body font-bold text-[12px] uppercase tracking-[0.2em] px-8 py-4 rounded-full transition-all duration-300">
@@ -242,7 +242,7 @@ foreach ( $icon_map as $kw => $ic ) {
             <div class="flex flex-wrap items-center justify-center gap-4">
                 <a href="<?php echo esc_url( home_url('/contact') ); ?>"
                    class="inline-flex items-center gap-3 bg-[#FF6A00] hover:bg-[#FF5500] text-white font-body font-bold text-[12px] uppercase tracking-[0.2em] px-10 py-5 rounded-full transition-all duration-300 hover:shadow-[0_0_40px_rgba(255,106,0,0.35)] hover:-translate-y-0.5">
-                    <i class="ph-fill ph-chat-circle text-lg"></i> Message Us Now
+                    <i class="ph-fill ph-chat-circle text-lg"></i> MESSAGE US NOW
                 </a>
                 <a href="<?php echo esc_url( home_url('/services') ); ?>"
                    class="inline-flex items-center gap-3 border border-white/10 hover:border-white/25 text-white/50 hover:text-white font-body font-bold text-[12px] uppercase tracking-[0.2em] px-10 py-5 rounded-full transition-all duration-300">

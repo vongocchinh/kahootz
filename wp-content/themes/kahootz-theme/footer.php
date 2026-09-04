@@ -1,4 +1,22 @@
 <footer class="bg-footer-bar border-t border-foreground/10 py-4" id="footer">
+  <nav
+    class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 font-body font-semibold text-sm text-white py-2">
+    <a href="<?php echo esc_url(home_url('/')); ?>" class="hover:text-primary transition-colors">Home</a> <span
+      class="text-white/20 px-1">|</span>
+    <a href="<?php echo esc_url(site_url('/services')); ?>" class="hover:text-primary transition-colors">Services</a>
+    <span class="text-white/20 px-1">|</span>
+    <a href="<?php echo esc_url(site_url('/packages')); ?>" class="hover:text-primary transition-colors">Packages</a>
+    <span class="text-white/20 px-1">|</span>
+    <a href="<?php echo esc_url(site_url('/stuck-vs-ai')); ?>" class="hover:text-primary transition-colors">AI</a> <span
+      class="text-white/20 px-1">|</span>
+    <a href="<?php echo esc_url(site_url('/case-study')); ?>" class="hover:text-primary transition-colors">Work</a>
+    <span class="text-white/20 px-1">|</span>
+    <a href="<?php echo esc_url(site_url('/about')); ?>" class="hover:text-primary transition-colors">About</a> <span
+      class="text-white/20 px-1">|</span>
+    <a href="<?php echo esc_url(site_url('/insights')); ?>" class="hover:text-primary transition-colors">Insights</a>
+    <span class="text-white/20 px-1">|</span>
+    <a href="<?php echo esc_url(site_url('/contact')); ?>" class="hover:text-primary transition-colors">Contact</a>
+  </nav>
   <div class="container-layout" bis_skin_checked="1">
     <div class="flex flex-wrap items-center justify-between gap-4" bis_skin_checked="1">
       <a href="<?php echo esc_url(home_url('/')); ?>" class="flex items-center gap-1" bis_skin_checked="1">
@@ -18,8 +36,10 @@
         © 2016–2025 Kahootz Media. All rights reserved.
       </p>
       <div class="flex items-center gap-6" bis_skin_checked="1">
-        <a class="text-sm text-white hover:text-foreground font-body transition-colors" href="<?php echo esc_url(site_url('/privacy-policy')); ?>">Privacy Policy</a>
-        <a class="text-sm text-white hover:text-foreground font-body transition-colors" href="<?php echo esc_url(site_url('/terms-and-conditions')); ?>">Terms &amp;
+        <a class="text-sm text-white hover:text-foreground font-body transition-colors"
+          href="<?php echo esc_url(site_url('/privacy-policy')); ?>">Privacy Policy</a>
+        <a class="text-sm text-white hover:text-foreground font-body transition-colors"
+          href="<?php echo esc_url(site_url('/terms-and-conditions')); ?>">Terms &amp;
           Conditions</a>
       </div>
       <div class="flex items-center gap-4" bis_skin_checked="1">
@@ -29,7 +49,8 @@
         $social_facebook = !empty($theme_options['social_facebook']) ? esc_url($theme_options['social_facebook']) : '#';
         $social_instagram = !empty($theme_options['social_instagram']) ? esc_url($theme_options['social_instagram']) : '#';
         ?>
-        <a target="_blank" aria-label="LinkedIn" class="text-white hover:text-foreground transition-colors" href="<?php echo $social_linkedin; ?>">
+        <a target="_blank" aria-label="LinkedIn" class="text-white hover:text-foreground transition-colors"
+          href="<?php echo $social_linkedin; ?>">
           <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="Page-1" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
@@ -45,7 +66,8 @@
             </g>
           </svg>
         </a>
-        <a target="_blank" aria-label="Facebook" class="text-white hover:text-foreground transition-colors" href="<?php echo $social_facebook; ?>">
+        <a target="_blank" aria-label="Facebook" class="text-white hover:text-foreground transition-colors"
+          href="<?php echo $social_facebook; ?>">
           <svg fill="#FFFFFF" width="20px" height="20px" viewBox="0 0 512 512">
             <g id="7935ec95c421cee6d86eb22ecd11b7e3">
               <path style="display: inline;" d="M283.122,122.174c0,5.24,0,22.319,0,46.583h83.424l-9.045,74.367h-74.379
@@ -56,7 +78,8 @@
             </g>
           </svg>
         </a>
-        <a target="_blank" aria-label="Instagram" class="text-white hover:text-foreground transition-colors" href="<?php echo $social_instagram; ?>">
+        <a target="_blank" aria-label="Instagram" class="text-white hover:text-foreground transition-colors"
+          href="<?php echo $social_instagram; ?>">
           <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
@@ -76,13 +99,13 @@
 </div>
 <?php wp_footer(); ?>
 <script>
-  document.addEventListener('click', function(e) {
+  document.addEventListener('click', function (e) {
     const link = e.target.closest('a');
     if (link) {
       const href = link.getAttribute('href');
       if (href && href.startsWith('#')) {
         e.preventDefault();
-        
+
         if (href.length > 1) {
           const target = document.querySelector(href);
           if (target) {

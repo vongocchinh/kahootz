@@ -139,7 +139,7 @@ $related = new WP_Query( $related_args );
                         </div>
                         <a href="<?php echo esc_url( home_url('/contact') ); ?>"
                            class="flex-shrink-0 inline-flex items-center gap-2.5 bg-white text-[#FF4500] font-body font-bold text-[11px] uppercase tracking-[0.18em] px-7 py-4 rounded-full hover:bg-white/90 transition-colors duration-200 whitespace-nowrap">
-                            <i class="ph-fill ph-chat-circle text-lg"></i> Message Us Now
+                            <i class="ph-fill ph-chat-circle text-lg"></i> MESSAGE US NOW
                         </a>
                     </div>
                 </div>

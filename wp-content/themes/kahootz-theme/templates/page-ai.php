@@ -23,7 +23,7 @@ get_header();
             <div class="flex flex-wrap items-center justify-center gap-4">
                 <a href="<?php echo esc_url( home_url('/contact') ); ?>"
                    class="inline-flex items-center gap-3 bg-[#FF6A00] hover:bg-[#FF5500] text-white font-body font-bold text-[12px] uppercase tracking-[0.2em] px-10 py-5 rounded-full transition-all duration-300 hover:shadow-[0_0_40px_rgba(255,106,0,0.35)] hover:-translate-y-0.5">
-                    <i class="ph-fill ph-chat-circle text-lg"></i> Message Us Now
+                    <i class="ph-fill ph-chat-circle text-lg"></i> MESSAGE US NOW
                 </a>
             </div>
         </div>
@@ -80,7 +80,7 @@ get_header();
                 </p>
                 <div class="pt-8 border-t border-white/5">
                     <a href="<?php echo esc_url( home_url('/contact') ); ?>" class="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-200 text-black font-body font-bold text-[11px] uppercase tracking-widest px-8 py-4 rounded-full transition-all duration-300 w-full sm:w-auto hover:scale-105">
-                        Message Us Now <i class="ph-bold ph-arrow-right"></i>
+                        MESSAGE US NOW <i class="ph-bold ph-arrow-right"></i>
                     </a>
                 </div>
             </div>

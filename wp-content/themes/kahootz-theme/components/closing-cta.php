@@ -22,7 +22,7 @@ $desc = isset($args['desc']) ? $args['desc'] : 'Tell us where your business is s
             <div class="flex flex-wrap items-center gap-4 flex-shrink-0 max-md:justify-center">
                 <a href="<?php echo esc_url( home_url('/contact') ); ?>"
                    class="inline-flex items-center gap-3 bg-[#FF6A00] hover:bg-[#FF5500] text-white font-body font-bold text-[12px] uppercase tracking-[0.2em] px-8 py-4 rounded-full transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,106,0,0.35)]">
-                    <i class="ph-fill ph-chat-circle text-lg"></i> Message Us Now
+                    <i class="ph-fill ph-chat-circle text-lg"></i> MESSAGE US NOW
                 </a>
                 <a href="<?php echo esc_url( home_url('/packages') ); ?>"
                    class="inline-flex items-center gap-2 border border-white/10 hover:border-[#FF6A00]/40 text-white/60 hover:text-[#FF6A00] font-body font-bold text-[12px] uppercase tracking-[0.2em] px-8 py-4 rounded-full transition-all duration-300">

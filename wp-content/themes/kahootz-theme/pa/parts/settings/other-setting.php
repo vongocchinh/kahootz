@@ -27,3 +27,24 @@ pa('field', array(
     'label' => 'Instagram URL',
     'columns' => 12
 ));
+
+pa('field', array(
+    'type' => 'text',
+    'field' => 'social_line',
+    'label' => 'Line URL',
+    'columns' => 12
+));
+
+pa('field', array(
+    'type' => 'text',
+    'field' => 'social_whatsapp',
+    'label' => 'WhatsApp URL',
+    'columns' => 12
+));
+
+pa('field', array(
+    'type' => 'text',
+    'field' => 'contact_email',
+    'label' => 'Contact Email',
+    'columns' => 12
+));

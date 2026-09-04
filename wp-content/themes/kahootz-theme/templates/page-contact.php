@@ -25,11 +25,16 @@ get_header();
     <!-- CONTENT -->
     <section class="container-layout px-4 sm:px-6 lg:px-8 py-24">
 
+        <?php
+        $theme_options = get_option('kahootz_settings');
+        $social_line = !empty($theme_options['social_line']) ? esc_url($theme_options['social_line']) : '#';
+        $social_whatsapp = !empty($theme_options['social_whatsapp']) ? esc_url($theme_options['social_whatsapp']) : '#';
+        ?>
         <div class="flex items-center justify-center gap-5 mb-14 max-md:flex-col">
-            <a href="#" class="flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#20b858] text-white font-body font-bold text-[12px] tracking-[0.2em] uppercase px-10 py-5 rounded-full transition-all duration-300 hover:shadow-[0_0_40px_rgba(37,211,102,0.35)] hover:-translate-y-0.5 w-[300px] max-md:w-full">
+            <a href="<?php echo $social_whatsapp; ?>" target="_blank" class="flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#20b858] text-white font-body font-bold text-[12px] tracking-[0.2em] uppercase px-10 py-5 rounded-full transition-all duration-300 hover:shadow-[0_0_40px_rgba(37,211,102,0.35)] hover:-translate-y-0.5 w-[300px] max-md:w-full">
                 <i class="ph-fill ph-whatsapp-logo text-[18px]"></i> CHAT ON WHATSAPP
             </a>
-            <a href="#" class="flex items-center justify-center gap-3 bg-[#00C300] hover:bg-[#00a800] text-white font-body font-bold text-[12px] tracking-[0.2em] uppercase px-10 py-5 rounded-full transition-all duration-300 hover:shadow-[0_0_40px_rgba(0,195,0,0.35)] hover:-translate-y-0.5 w-[300px] max-md:w-full">
+            <a href="<?php echo $social_line; ?>" target="_blank" class="flex items-center justify-center gap-3 bg-[#00C300] hover:bg-[#00a800] text-white font-body font-bold text-[12px] tracking-[0.2em] uppercase px-10 py-5 rounded-full transition-all duration-300 hover:shadow-[0_0_40px_rgba(0,195,0,0.35)] hover:-translate-y-0.5 w-[300px] max-md:w-full">
                 <i class="ph-fill ph-chat-circle text-[18px]"></i> CHAT ON LINE
             </a>
         </div>

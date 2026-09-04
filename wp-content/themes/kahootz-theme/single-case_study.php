@@ -258,7 +258,7 @@ if ( ! empty( $client_name ) ) {
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>"
                    class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-[#FF6A00] hover:bg-[#FF5500] text-white font-body font-bold text-[12px] uppercase tracking-[0.2em] px-10 py-5 rounded-full transition-all duration-300 hover:shadow-[0_0_40px_rgba(255,106,0,0.35)] hover:-translate-y-0.5">
-                    <i class="ph-fill ph-chat-circle text-lg"></i> Message Us Now
+                    <i class="ph-fill ph-chat-circle text-lg"></i> MESSAGE US NOW
                 </a>
                 <a href="<?php echo esc_url( home_url( '/case-study' ) ); ?>"
                    class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-transparent border border-white/15 hover:border-white/30 text-white font-body font-bold text-[12px] uppercase tracking-[0.2em] px-10 py-5 rounded-full transition-all duration-300">
