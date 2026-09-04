@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container-layout {
+    @apply max-w-[1200px] w-full mx-auto;
+  }
+
+  @media (max-width: 1224px) {
+    .container-layout {
+      @apply px-8;
+    }
+  }
+  @media (max-width: 960px) {
+    .container-layout {
+      @apply px-4;
+    }
+  }
+}
+
+
+@layer base {
+  :root {
+    --background: 219 70% 4%;
+    --foreground: 220 37% 97%;
+    --primary: 25 100% 50%;
+    --primary-foreground: 220 37% 97%;
+    --accent: 282 100% 62%;
+    --accent-foreground: 219 70% 4%;
+    --muted: 222 13% 75%;
+    --page-base: 219 70% 4%;
+    --page-section: 219 70% 4%;
+    --card: 215 61% 7%;
+    --card-elevated: 216 56% 9%;
+    --panel: 215 68% 7%;
+    --panel-highlight: 217 57% 10%;
+    --footer-bar: 218 67% 5%;
+    --button-secondary: 218 44% 7%;
+    --cat-orange: 25 100% 50%;
+    --cat-purple: 282 100% 62%;
+    --cat-cyan: 199 100% 55%;
+    --cat-magenta: 333 100% 59%;
+    --border: 220 37% 97%;
+    --input: 220 37% 97%;
+    --ring: 25 100% 50%;
+    --radius: 6px;
+    --font-display: 'Montserrat', system-ui, sans-serif;
+    --font-body: 'Montserrat', system-ui, sans-serif;
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+}
+
+body {
+  font-family: var(--font-body);
+}

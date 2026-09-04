@@ -1,0 +1,936 @@
+/* --------------------------------------------------------------------------------
+  Styles for Pa
+--------------------------------------------------------------------------------- */
+
+  .pa-notice-error,
+  .pa-notice-update {
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+
+  .pa-notice-error ul,
+  .pa-notice-update ul {
+    list-style-position: inside;
+    margin-top: 13px;
+    margin-bottom: 13px;
+  }
+
+    .pa-notice-error {
+      background-color: #ffe7e7;
+    }
+
+    .pa-notice-update {
+      background-color: #dff0d8;
+    }
+
+    .form-table td .pa-notice p,
+    .form-table td .pa-notice-error p,
+    .form-table td .pa-notice-update p {
+      margin: 0.5em 0;
+      padding: 2px;
+    }
+
+  .pa-required {
+    color: #c00;
+    margin: 0 0 0 0.25em;
+  }
+
+  .pa-error {
+    background-color: #ffe7e7 !important;
+    outline: 1px solid #c00 !important;
+  }
+
+    .pa-error-text {
+      color: #c00 !important;
+    }
+
+  .pa-form {
+    display: block;
+  }
+
+  .pa-field-container {
+    padding-right: 240px;
+    position: relative;
+    clear: both;
+  }
+
+    .pa-field-preview {
+      clear: both;
+      position: relative;
+      width: 100%;
+    }
+
+      .pa-field-container:before,
+      .pa-field-container:after,
+      .pa-field-preview:before,
+      .pa-field-preview:after,
+      .pa-field-container-row:before,
+      .pa-field-container-row:after
+      .pa-field:before,
+      .pa-field:after,
+      .pa-error:before,
+      .pa-error:after {
+        content: "";
+        display: table;
+      }
+
+        .pa-field-container:after,
+        .pa-field-preview:after,
+        .pa-field:after,
+        .pa-error:after {
+          clear: both;
+        }
+
+      .pa-field-preview .attachment {
+        margin-right: 7px;
+      }
+
+      .wp-core-ui table.form-table .pa-field-preview .selected.attachment {
+        -webkit-box-shadow: inset 0 0 0 5px #f1f1f1, inset 0 0 0 7px #ccc;
+        box-shadow: inset 0 0 0 5px #f1f1f1, inset 0 0 0 7px #ccc;
+      }
+
+  .pa-field-display {
+    padding-top: 1%;
+    margin-bottom: 1em;
+  }
+  
+    .pa-field-display.pa-field-column {
+      margin-bottom: 0 !important;
+    }
+
+  .pa-label-container {
+    width: 200px;
+    float: left;
+    padding: 10px 10px 10px 0;
+  }
+
+    .pa-label-container .description {
+      font-size: 13px;
+    }
+
+  .pa-field {
+    width: 100%;
+    float: right;
+    margin: 0 -230px 0 auto;
+    padding: 10px 10px 15px 10px;
+  }
+
+    .postbox .pa-field {
+      padding-right: 0px;
+      margin-right: -240px;
+    }
+
+    .pa-field input[type="text"],
+    .pa-field input[type="number"],
+    .pa-field input[type="password"],
+    .pa-field select,
+    .pa-field textarea {
+      margin: 0;
+      min-height: 1.9em;
+      max-width: 100%;
+      line-height: 1.3em;
+      vertical-align: middle !important;
+    }
+
+    .pa-field .large-text {
+      width: 100%;
+    }
+
+  .pa-label,
+  .pa-child-label {
+    font-weight: 600;
+    vertical-align: middle;
+    line-height: 1.4em;
+  }
+
+    .pa-form-table .pa-label,
+    .pa-form-table .pa-child-label {
+      line-height: 1.3;
+      color: inherit;
+    }
+
+    .pa-form-table .pa-label-container .description {
+      font-size: 14px;
+    }
+
+    .pa-label-inline {
+      display: inline;
+      margin-right: 7px;
+    }
+
+    /* Slight position adjustment for child labels */
+
+   .pa-child-label {
+      display: block;
+      margin-right: 0.25%;
+      margin-left: 0.25%;
+      padding-right: 1em;
+      line-height: 2em;
+    }
+
+    .form-wrap .pa-form-field {
+      margin: 0 0 10px 0;
+      padding: 8px 0;
+      clear: left;
+    }
+
+      .form-wrap .pa-form-field p {
+        clear: both;
+      }
+
+  .pa-field-container ul {
+     list-style: inside;
+  }
+
+  /* Adjustment to style checkboxes and radio buttons better */
+
+  ul.pa-field-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+    ul.pa-field-list li {
+      vertical-align: middle;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      background: none;
+    }
+
+    .pa-field-list-item {
+      display: inline-block;
+      font-weight: normal;
+      padding-right: 1em;
+    }
+
+      .pa-field-list-item input[type="checkbox"],
+      .pa-field-list-item input[type="radio"] {
+        vertical-align: middle;
+        position: relative;
+      }
+
+  /* Conditions */
+
+  .pa-field-condition-toggle {
+    position: absolute;
+    left: -9999999px;
+    visibility: hidden;
+  }
+
+    table.form-table tr td .pa-field-condition-toggle {
+      position: relative;
+      left: auto;
+      visibility: visible;
+    }
+
+  /* Additional Field Adjustmnets */
+
+  .pa-field-column input[type="email"],
+  .pa-field-column input[type="number"],
+  .pa-field-column input[type="password"],
+  .pa-field-column input[type="search"],
+  .pa-field-column input[type="tel"],
+  .pa-field-column input[type="text"],
+  .pa-field-column input[type="url"],
+  .pa-field-column input[type="color"],
+  .pa-field-column input[type="date"],
+  .pa-field-column input[type="datetime"],
+  .pa-field-column input[type="datetime-local"],
+  .pa-field-column input[type="month"],
+  .pa-field-column input[type="time"],
+  .pa-field-column input[type="week"],
+  .pa-field-column select,
+  .pa-field-column option,
+  .pa-field-column textarea {
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+    .pa-field-column .wp-picker-container,
+    .pa-field-column .wp-picker-container:active {
+      display: block;
+    }
+
+  .wp-picker-container input[type=text].wp-color-picker {
+    width: 65px !important;
+  }
+
+  /* Add Mores & Sortables */
+
+  .pa-field-sortable {
+    padding-right: 7px !important;
+  }
+
+  .pa-field-addmore-wrapper {
+    position: relative;
+    border: 1px solid #dfdfdf;
+    padding: 7px;
+    margin-bottom: 7px;
+    clear: left;
+    background: #fcfcfc;
+    padding-right: 82px;
+    float: left;
+    zoom: 1;
+    min-height: 28px;
+  }
+
+    .pa-field-addmore-wrapper.ui-sortable,
+    .pa-field-addmore-wrapper.ui-sortable-handle,
+    .pa-field-addmore-wrapper .wp-editor-container {
+      cursor: default;
+    }
+
+    .pa-field-addmore-wrapper.pa-field-sortable-active,
+    .pa-field-addmore-wrapper.pa-field-sortable-active label {
+      cursor: move;
+    }
+
+    .pa-field-addmore-wrapper:before,
+    .pa-field-addmore-wrapper:after {
+      content: "";
+      display: table;
+    }
+
+    .pa-field-addmore-wrapper:after {
+      clear: both;
+    }
+
+    .pa-field-addmore-wrapper > input[type="email"],
+    .pa-field-addmore-wrapper > input[type="number"],
+    .pa-field-addmore-wrapper > input[type="password"],
+    .pa-field-addmore-wrapper > input[type="search"],
+    .pa-field-addmore-wrapper > input[type="tel"],
+    .pa-field-addmore-wrapper > input[type="text"],
+    .pa-field-addmore-wrapper > input[type="url"],
+    .pa-field-addmore-wrapper > input[type="color"],
+    .pa-field-addmore-wrapper > input[type="date"],
+    .pa-field-addmore-wrapper > input[type="datetime"],
+    .pa-field-addmore-wrapper > input[type="datetime-local"],
+    .pa-field-addmore-wrapper > input[type="month"],
+    .pa-field-addmore-wrapper > input[type="time"],
+    .pa-field-addmore-wrapper > input[type="week"],
+    .pa-field-addmore-wrapper > select,
+    .pa-field-addmore-wrapper > textarea {
+      margin: 0;
+    }
+
+    .pa-addmore-placeholder {
+      margin-bottom: 7px;
+      background: #444444;
+      border: 1px solid #444444;
+      float: left;
+      clear: left;
+      opacity: 0.07;
+      filter: alpha(opacity=7);
+    }
+
+      .pa-field-addmore-wrapper div.pa-addmore-placeholder {
+        margin-top: 7px;
+      }
+
+        .pa-field-addmore-wrapper > div.pa-addmore-placeholder:nth-last-child(2) {
+          margin-bottom: 0px;
+        }
+
+      .attachments .pa-addmore-placeholder {
+        clear: none;
+      }
+
+      table.form-table .pa-addmore-placeholder {
+        background: #eaeaea;
+      }
+
+    .pa-field-addmore-wrapper-vertical {
+      padding-right: 45px;
+      min-height: 63px;
+    }
+
+    .pa-field-addmore-wrapper-full {
+      float: none;
+    }
+
+    .pa-field-addmore-wrapper-wide {
+      float: none;
+    }
+
+    .pa-field-addmore-wrapper-actions {
+      width: 70px;
+      margin: 0;
+      position: absolute;
+      bottom: 7px;
+      right: 7px;
+      text-align: right;
+    }
+
+      .pa-field-addmore-wrapper-actions .pa-addmore-button {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 16px;
+        height: 28px;
+        width: 28px;
+        line-height: 28px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        cursor: pointer;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+        a.pa-addmore-button span {
+          font: normal 24px/28px Arial, 'Helvetica Neue', Helvetica, sans-serif;
+          position: relative;
+          left: 0;
+          top: 0;
+          display: block;
+          vertical-align: middle;
+          height: 28px;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+          a.pa-addmore-remove span {
+            top: -2px;
+          }
+
+        body.wp-admin a.pa-addmore-button span {
+          display: none;
+        }
+
+          body.wp-admin a.pa-addmore-button:before {
+            display: inline-block;
+            position: relative;
+            left: 0;
+            top: -1px;
+            font: normal 20px/1 'dashicons';
+            vertical-align: middle;
+            -webkit-transition: all 0.2s;
+            transition: all 0.2s;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+          }
+
+            noindex:-o-prefocus, body.wp-admin a.pa-addmore-button:before {
+              line-height: 38px;
+            }
+
+          body.wp-admin a.pa-addmore-add:before {
+            content: '\f132';
+          }
+
+          body.wp-admin a.pa-addmore-remove:before {
+            content: '\f460';
+            top: -2px;
+          }
+
+        a.pa-addmore-add,
+        a.pa-addmore-remove {
+          margin: 0 0 0 7px !important;
+          font-weight: bold;
+          background-image: none;
+          text-shadow: none;
+          -webkit-border-radius: 2px;
+          border-radius: 2px;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+        }
+
+          a.pa-addmore-add,
+          a.pa-addmore-remove {
+            border: 1px solid #dfdfdf;
+            color: #333333;
+            background-color: #ffffff;
+          }
+
+            a.pa-addmore-add:hover,
+            a.pa-addmore-remove:hover {
+              background-image: none;
+              -webkit-box-shadow: none;
+              box-shadow: none;
+              border: 1px solid #adadad;
+              background-color: #e6e6e6;
+              color: #333333;
+              text-decoration: none;
+            }
+
+    .pa-field-addmore-wrapper .pa-field-addmore-wrapper {
+      padding-top: 7px;
+      padding-left: 7px;
+      padding-bottom: 7px;
+      border-left: 7px solid #dfdfdf;
+      margin-bottom: 0;
+      float: none;
+    }
+
+      .pa-field-addmore-wrapper-actions-vertical {
+        width: 30px;
+      }
+
+        .pa-field-addmore-wrapper-actions-vertical.pa-field-addmore-wrapper-actions {
+          margin-top: 0;
+          bottom: 7px;
+          top: auto;
+        }
+
+      .pa-field-addmore-wrapper .pa-field-addmore-wrapper {
+        margin-top: 7px;
+      }
+
+      .pa-field-addmore-wrapper:hover {
+        background: #f6f6f6;
+      }
+
+        .pa-field-addmore-wrapper .pa-field-addmore-wrapper:hover {
+          border-left-color: #cccccc;
+        }
+
+      .pa-field-addmore-wrapper .pa-field-column {
+        display: inline-block !important;
+        float: none !important;
+        vertical-align: top !important;
+      }
+
+      .pa-field-addmore-wrapper-actions-vertical .pa-addmore-add,
+      .pa-field-addmore-wrapper-actions-vertical .pa-addmore-remove {
+        margin: 7px 0 0 0 !important;
+      }
+
+      .ui-sortable-helper {
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+
+        opacity: 0.85;
+        filter: alpha(opacity=85);
+      }
+
+      .ui-sortable .pa-field-description {
+        display: block;
+        clear: both;
+      }
+
+    .pa-field-addmore-wrapper .wp-color-result {
+      top: 4px;
+    }
+
+    .pa-field-addmore-wrapper .wp-picker-input-wrap {
+      margin-top: 4px;
+    }
+
+    .pa-field-addmore-wrapper .mceResize{
+      display: none !important;
+    }
+
+    .pa-field-addmore-wrapper .wp-editor-wrap {
+      margin-top: 7px;
+    }
+
+  ul.pa-field-list,
+  ol.pa-field-list {
+    margin-bottom: 0;
+    list-style-type: none;
+  }
+
+    ul.pa-field-list li,
+    ol.pa-field-list li {
+      list-style-type: none;
+    }
+
+  .pa-field-description {
+    clear: both;
+    display: block;
+    color: #666666;
+  }
+
+    #widgets-right .widgets-holder-wrap .pa-field-description {
+      margin-top: 4px;
+      padding: 0;
+      font-style: italic;
+    }
+
+
+
+/* --------------------------------------------------------------------------------
+  Pa Tooltips
+--------------------------------------------------------------------------------- */
+
+  /* Needed for frontend tooltips */
+  .dashicons-editor-help:before {
+    content: "\f223";
+  }
+
+  .pa-tooltip {
+    position: relative;
+    cursor: default;
+    display: inline-block;
+    margin: 0;
+    font-size: 18px;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    top: -2px;
+    left: 4px;
+    text-align: left;
+  }
+
+    .button .pa-tooltip {
+      margin: 0;
+    }
+
+  .pa-tooltip:before {
+    color: #737373;
+  }
+
+    .pa-tooltip:hover:before,
+    .pa-tooltip:hover:after,
+    .pa-tooltip:focus:before,
+    .pa-tooltip:focus:after {
+      visibility: visible;
+      opacity: 1;
+      z-index: 999999999;
+    }
+
+    .pa-tooltip:after {
+      font-family: open sans;
+      border: 1px solid #737373;
+      background-color: #737373;
+      color: #fff;
+      font-weight: bold;
+      text-align: left;
+      text-shadow: none;
+      content: attr(data-pa-tooltip);
+      padding: 8px 16px;
+      font-size: 13px;
+      line-height: 18px;
+      white-space: normal;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-left: 22px;
+      visibility: hidden;
+      opacity: 0;
+      z-index: 2147483646;
+      pointer-events: none;
+      min-width: 250px;
+      max-width: 330px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      -webkit-transition: 0.3s ease;
+      -moz-transition: 0.3s ease;
+      transition: 0.3s ease;
+    }
+
+      .pa-tooltip:hover:before {
+        cursor: pointer;
+      }
+
+    .pa-tooltip.dashicons {
+      vertical-align: middle;
+    }
+
+    body.plugins-php .plugins #pa .plugin-title {
+      overflow: visible;
+    }
+
+    /* --------------------------------------------------------------------------------
+      Pa Tooltips for plugins page
+    --------------------------------------------------------------------------------- */
+
+    body.plugins-php .pa-tooltip,
+    .plugins .plugin-title .dashicons.pa-tooltip {
+      float: none;
+      height: 20px;
+      width: 20px;
+    }
+
+    body.plugins-php .plugins #pa .plugin-title {
+      overflow: visible;
+    }
+
+    body.plugins-php .plugins .plugin-title .dashicons.pa-tooltip:before {
+        font-size: 18px;
+        color: #737373;
+        background-color: transparent;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+    }
+
+
+
+
+/* --------------------------------------------------------------------------------
+  WordPress Updates
+--------------------------------------------------------------------------------- */
+
+  /* WP Color Picker */
+
+  .wp-picker-container {
+    margin: 0;
+  }
+
+  a.wp-color-result,
+  a.wp-color-result:visited,
+  a.wp-color-result:hover,
+  a.wp-color-result:focus,
+  a.wp-color-result:active {
+    text-decoration: none;
+    overflow: hidden;
+    font-weight: normal;
+  }
+
+  a.wp-color-result {
+    vertical-align: top;
+  }
+
+  input[type="text"].wp-color-picker {
+    display: inline-block;
+  }
+
+
+  /* WP Editor */
+
+  .mce-btn button:hover {
+    background: #fafafa !important;
+  }
+
+  a.wp-switch-editor {
+    text-decoration: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+  }
+
+  .wp-editor-tabs {
+    margin: 0;
+  }
+
+  .wp-editor-container,
+  .mce-tinymce {
+    border: 1px solid #dfdfdf;
+  }
+
+  .wp-editor-container .mce-tinymce {
+    border: none;
+  }
+
+  .wp-editor-wrap,
+  .mce-tinymce {
+    overflow: hidden;
+    width: 99.9%;
+  }
+
+
+
+/* --------------------------------------------------------------------------------
+  Basic Front-end Field Template
+--------------------------------------------------------------------------------- */
+
+  .pa-theme-field-container {
+    margin-bottom: 1em;
+    clear: both;
+    position: relative;
+    width: 99%;
+  }
+
+    .pa-theme-field-container:before,
+    .pa-theme-field-container:after {
+      content: "";
+      display: table;
+    }
+
+      .pa-theme-field-container:after {
+        clear: both;
+      }
+
+    .pa-theme-field-container .pa-field-list-item input[type="checkbox"],
+    .pa-theme-field-container .pa-field-list-item input[type="radio"] {
+      vertical-align: top;
+      margin-top: 0;
+    }
+
+    .pa-theme-field-container .pa-theme-field-description {
+      font-size: .9em;
+      font-style: italic;
+      clear: left;
+      display: block;
+    }
+
+    .pa-theme-field-container input[type="email"],
+    .pa-theme-field-container input[type="number"],
+    .pa-theme-field-container input[type="password"],
+    .pa-theme-field-container input[type="search"],
+    .pa-theme-field-container input[type="tel"],
+    .pa-theme-field-container input[type="text"],
+    .pa-theme-field-container input[type="url"],
+    .pa-theme-field-container input[type="color"],
+    .pa-theme-field-container input[type="date"],
+    .pa-theme-field-container input[type="datetime"],
+    .pa-theme-field-container input[type="datetime-local"],
+    .pa-theme-field-container input[type="month"],
+    .pa-theme-field-container input[type="time"],
+    .pa-theme-field-container input[type="week"],
+    .pa-theme-field-container select,
+    .pa-theme-field-container option,
+    .pa-theme-field-container textarea {
+      height: auto;
+      vertical-align: top;
+    }
+
+    .pa-theme-field-container select {
+      -webkit-appearance: menulist-button;
+      appearance: menulist-button;
+    }
+
+    .pa-theme-field-container input[type="file"] {
+      line-height: 1;
+      border: none;
+    }
+
+    .pa-theme-field-container select[multiple] {
+      height: auto;
+    }
+
+    .pa-theme-field-container label {
+      padding: 0.25em 0.25em 0.25em 0;
+      line-height: 1;
+    }
+
+    .pa-theme-field-container ul.pa-field-list,
+    .pa-theme-field-container ul.pa-field-list li,
+    .pa-theme-field-container ol.pa-field-list,
+    .pa-theme-field-container ol.pa-field-list li {
+      margin-left: 0;
+      padding-left: 0;
+    }
+
+  .pa-theme-field-container .pa-field-addmore-wrapper {
+    padding: 10px 82px 10px 10px;
+  }
+
+  .pa-theme-field-container .attachments {
+    list-style-type: none;
+    margin: 10px 0;
+  }
+
+    .pa-theme-field-container .attachments > * {
+      list-style-type: none;
+    }
+
+    .pa-theme-field-container .attachments button {
+      width: 100%;
+      margin: 0;
+    }
+
+      .pa-theme-field-container .attachments button span {
+        width: 100%;
+        clip: auto;
+        height: auto;
+        overflow: inherit;
+        position: relative !important;
+      }
+
+
+
+/* --------------------------------------------------------------------------------
+  Mobile Updates
+--------------------------------------------------------------------------------- */
+
+  @media screen and (max-width: 782px) {
+
+    .pa-field-list-item {
+      margin-bottom: 10px;
+    }
+
+      .pa-field-list-item input[type="checkbox"],
+      .pa-field-list-item input[type="radio"] {
+        margin: 2px 1px;
+      }
+
+    .pa-tooltip:after {
+      margin-left: -25px;
+      width: 330px;
+      left: -330px;
+    }
+
+    .wp-media-buttons a {
+      font-size: 16px;
+      line-height: 37px;
+      height: 39px;
+      padding: 0 20px 0 15px;
+    }
+
+      .wp-media-buttons a span {
+        padding: 2px 0 0 5px;
+      }
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    body .pa-field-container {
+      padding-right: 10px;
+      margin-bottom: 10px;
+      display: block !important;
+    }
+
+      body .pa-field-container select,
+      body .pa-field-container input {
+        max-width: 100%;
+      }
+
+      body .pa-label-container {
+        display: block;
+        position: static;
+        float: none;
+        width: auto;
+        padding: 1% 1.5% 1% 0;
+        margin: 0;
+        border: none;
+      }
+
+      body .pa-field {
+        padding: 0.6667% 0 1% 0;
+        margin: 0;
+        width: 100%;
+        float: none;
+      }
+
+      body .pa-field input[type="text"],
+      body .pa-field input[type="email"],
+      body .pa-field input[type="password"],
+      body .pa-field select,
+      body .pa-field textarea {
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 7px 10px;
+        display: block;
+        max-width: none;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      body .pa-field .description {
+        font-size: 14px;
+        line-height: 1.5;
+        padding: 0;
+      }
+
+    body .pa-label-container .pa-field-addmore-wrapper {
+      min-width: 0;
+    }
+
+    body .pa-field-column {
+      width: 100% !important;
+      float: none !important;
+    }
+  }
